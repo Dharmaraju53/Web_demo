@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and id example</title>
+
+    <style>
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #unq{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- this is class attributes -->
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+
+    <a href="#unq">This is id reference</a>
+
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    <p class="highlight">This is a paragraph that was highlighted</p>
+    
+    
+    
+    
+
+
+    <h1 id="unq">Heading with id calling (this will change when  js trigers)</h1>
+
+    <h1 id="unq">Heading with id calling (this will not change when  js trigers)</h1>
+
+    <script>
+
+        // selecting elemements with class
+        const highele=document.querySelectorAll('.highlight'); //varible calling and passing the values
+        highele.forEach(ele => ele.style.border = '2px solid red');
+
+        // selecting elemements with id
+        const unqiue = document.getElementById('unq');
+        unqiue.style.color = 'red';
+
+    </script>
+
+</body>
+</html>
