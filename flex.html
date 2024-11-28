@@ -6,40 +6,54 @@
     <title>Sample page!</title>
     <!-- These are useful to connect the external sources and the plugins -->
     <link rel="shortcut icon" href="/logo_3-removebg-preview.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .water {
+        height: 150px;
+        width: 120px;
+        background: linear-gradient(aqua, white);
+        border-radius: 15px;
+        color: black;
+        text-align: center;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .water img {
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+      .container {
+        padding: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    </style>
   </head>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: content-box;
-    }
-
-    .water {
-      height: 120px;
-      width: 100px;
-      background: linear-gradient(aqua, white);
-      border-radius: 15px;
-      color: black;
-      text-align: center;
-      line-height: 150px;
-      margin: 50px;
-      flex-basis: 200px
-    }
-
-    .container {
-      padding: 50px 0px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-  </style>
-
   <body>
     <div class="container">
-      <div class="water"><img src="./assets/user.webp" alt="" style="height: 80px;">Caleb</div>
-      <div class="water"><img src="./assets/user.webp" alt="" style="height: 80px;"></div>
-      <div class="water"><img src="./assets/user.webp" alt="" style="height: 80px;"></div>
+      <div class="water">
+        <img src="./assets/user.webp" alt="" />
+        <span>Caleb</span>
+      </div>
+      <div class="water">
+        <img src="./assets/user.webp" alt="" />
+        <span>John</span>
+      </div>
+      <div class="water">
+        <img src="./assets/user.webp" alt="" />
+        <span>Anna</span>
+      </div>
     </div>
   </body>
 </html>
