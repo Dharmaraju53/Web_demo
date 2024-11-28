@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample page!</title>
+    <!-- These are useful to connect the external sources and the plugins -->
+    <link rel="shortcut icon" href="/logo_3-removebg-preview.png" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample page!</title>
-        <!-- These are useful to connect the external sources and the plugins -->
-        <link rel="shortcut icon" href="/logo_3-removebg-preview.png">
-    </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+    }
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: content-box;
-        }
+    .water {
+      height: 120px;
+      width: 100px;
+      background: linear-gradient(aqua, white);
+      border-radius: 15px;
+      color: black;
+      text-align: center;
+      line-height: 100px;
+    }
 
-        .water{        
-           height: 120px;
-           width:100px;
-           background: linear-gradient(aqua,white);
-           border-radius: 15px;
-           color:black;
-           text-align: center;
-           line-height: 100px;
-        }
+    .water img {
+      width: 100%;
+      height: 100%;
+    }
 
-        .container{
-            padding: 50px 0px;
-            display: flex;
-            
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+    .container {
+      padding: 50px 0px;
+      display: flex;
 
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  </style>
 
-       
-    </style>
-
-<body>
-   
+  <body>
     <div class="container">
+      <div class="water"><img src="./assets/cww.jpg" alt="" /></div>
 
-        <div class="water">Siva</div>
+      <div class="water"><img src="./assets/guides.jpg" alt="" /></div>
 
-        <div class="water">Siva</div>
+      <div class="water"><img src="./assets/webinars.png" alt="" /></div>
 
-        <div class="water">Caleb</div>
-        
-
+      <div class="water">Apple</div>
     </div>
-    
-    
-</body>
-</html> 
+  </body>
+</html>
