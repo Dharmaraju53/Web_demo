@@ -18,3 +18,9 @@ header {
   align-items: center;
   align-content: center;
 }
+
+.table-container{
+  max-width: 100%;
+  display: block;
+  overflow-x: auto;
+}

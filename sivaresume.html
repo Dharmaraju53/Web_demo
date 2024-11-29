@@ -4,63 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/logo_3-removebg-preview.png" />
-    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="./sivaresume.css" />
     <title>Resume</title>
-    <style>
-      .container {
-        padding: 20px;
-        border: 5px solid #ccc;
-        max-width: 100%;
-        display: block;
-        overflow-x:auto;
-      }
-      #academics {
-        width: 100%;
-        border-collapse: collapse;
-        border: 2;
-      }
-      h2 {
-        margin: 10px 0;
-        background-color: #ccc;
-      }
-
-      .signature {
-        width: 100%;
-        text-align: right;
-        font-style: italic;
-      }
-      #top_button {
-        width: 30px;
-        background-color: yellow;
-        border: 2px solid red;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-      }
-
-      #links {
-        /* width: 100px; */
-        position: fixed;
-        top: 50%;
-        right: 0;
-        /* background-color: aquamarine; */
-        border: 1px solid red;
-        border-radius: 10px 0 0px 10px;
-      }
-      #links ul {
-        padding: 20px;
-        margin: 0;
-        list-style: none;
-      }
-
-      #links li > a {
-        text-decoration: none;
-        color: yellow;
-      }
-      #links li > a:hover {
-        color: #fff;
-      }
-    </style>
+   
   </head>
   <body style="background-color: antiquewhite">
     <div id="links">
@@ -81,7 +27,7 @@
         </div>
         <div>
           <img
-            src="./assets/siva_upd_pic.webp"
+            src="./Siva/assets/siva_upd_pic.webp"
             height="150"
             width="150"
             alt=""
@@ -95,7 +41,6 @@
         learn and grow while contributing to the success of the company.
       </p>
       <h2 id="academic_info">Basic Academic Credentials</h2>
-
       <div class="table-container">
       <table id="academics" border="2">
         <thead>
@@ -133,7 +78,6 @@
           </tr>
         </tbody>
       </table>
-
     </div>
       <h2 id="projects">Projects</h2>
       <h3>Pujari App</h3>
@@ -179,14 +123,20 @@
       </div>
     </div>
     <script>
-      const links = document.getElementById("links");
-      const color = Math.floor(100 + Math.random() * 130);
-      links.style.backgroundColor = `rgb(
-        ${color},
-        ${color},
-        ${color}
-      )`;
-      links.style.color = "yellow";
+        const links = document.getElementById("links");
+        const color = Math.floor(100 + Math.random() * 130);
+        links.style.backgroundColor = `rgb(${color}, ${color}, ${color})`;
+        links.style.color = "yellow";
+        
+        // Add a hover effect for smoother animations
+        links.addEventListener("mouseenter", () => {
+          links.style.backgroundColor = `rgb(${color + 30}, ${color + 30}, ${color + 30})`;
+        });
+        
+        links.addEventListener("mouseleave", () => {
+          links.style.backgroundColor = `rgb(${color}, ${color}, ${color})`;
+        });
+        
     </script>
   </body>
 </html>

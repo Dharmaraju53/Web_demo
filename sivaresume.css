@@ -1,0 +1,123 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Left Section */
+  .left_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    padding: 20px;
+    border: 5px solid #ccc;
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .table-container{
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin: 20px 0;
+
+  }
+  
+  /* Table Styling */
+  #academics {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+  }
+  
+  #academics th, #academics td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Signature */
+  .signature {
+    width: 100%;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  /* Floating Links Section */
+  #links {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    border: 1px solid red;
+    border-radius: 10px 0 0px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s;
+  }
+  
+  #links ul {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #links li > a {
+    text-decoration: none;
+    color: yellow;
+    transition: color 0.3s;
+  }
+  
+  #links li > a:hover {
+    color: #fff;
+  }
+  
+  /* Button Styling */
+  #top_button {
+    width: 50px;
+    background-color: yellow;
+    border: 2px solid red;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  #top_button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
