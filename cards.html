@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample cards!</title>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card{
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.2s ease box-shadow 0.2s ease;
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 4px 8px rgba(195, 38, 38, 0.5);
+    }
+
+    .card img{
+      width: 100%;
+      height: 150px;
+    }
+
+
+    .button{
+      display: inline-block;
+      margin-top: 10px;
+
+      padding: 8px 12px;
+      background-color: #0000FF;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+      <div class="card-container">
+
+        <!-- card1 -->
+        <div class="card">
+         
+          <!-- cardimage -->
+          <img src="./assets/cww.jpg" alt="">
+          <!-- cardcontent -->
+          <div class="content">
+            <h3 class="title">Heading</h3>
+
+            <p class="text">This is some dummy text for the card!</p>
+
+            <a href="" class="button">Read more</a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+         
+          <!-- cardimage -->
+          <img src="./assets/cww.jpg" alt="">
+          <!-- cardcontent -->
+          <div class="content">
+            <h3 class="title">Heading</h3>
+
+            <p class="text">This is some dummy text for the card!</p>
+
+            <a href="" class="button">Read more</a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+         
+          <!-- cardimage -->
+          <img src="./assets/cww.jpg" alt="">
+          <!-- cardcontent -->
+          <div class="content">
+            <h3 class="title">Heading</h3>
+
+            <p class="text">This is some dummy text for the card!</p>
+
+            <a href="" class="button">Read more</a>
+          </div>
+
+        </div>
+        
+      </div>
+      
+  
+</body>
+</html>

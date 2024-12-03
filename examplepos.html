@@ -1,121 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Position Property</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    section {
-      margin: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
-
-    .example {
-      margin-bottom: 20px;
-      padding: 20px;
-      background-color: #f4f4f4;
-      border: 1px solid #ddd;
-    }
-
-    .box {
-      width: 150px;
-      height: 100px;
-      color: white;
-      text-align: center;
-      line-height: 100px;
-    }
-
-    /* Static */
-    .static-box {
-      background-color: lightcoral;
-      position: static;
-    }
-
-    /* Relative */
-    .relative-box {
-      background-color: lightgreen;
-      position: relative;
-      top: 10px;
-      left: 20px;
-    }
-
-    /* Absolute */
-    .absolute-container {
-      position: relative;
-      background-color: #fafafa;
-      padding: 20px;
-      border: 1px dashed #aaa;
-    }
-
-    .absolute-box {
-      background-color: lightblue;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-    }
-
-    /* Fixed */
-    .fixed-box {
-      background-color: lightyellow;
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      border: 1px solid #ccc;
-    }
-
-    /* Sticky */
-    .sticky-box {
-      background-color: lightgray;
-      position: sticky;
-      top: 0;
-      padding: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>CSS Position Property Examples</h1>
-  </header>
+    
+    <div style="position: relative;">
+        Parent (relative)
 
-  <main>
-    <section>
-      <h2>Static</h2>
-      <div class="example static-box">Static</div>
-    </section>
+        <div style="position: absolute; top:0; background: lightblue;">
+          Child (absolute, positioned relative to parent)
+        </div>
+        
+    </div>
+      
+      
 
-    <section>
-      <h2>Relative</h2>
-      <div class="example relative-box">Relative</div>
-    </section>
 
-    <section>
-      <h2>Absolute</h2>
-      <p>The following box is positioned relative to the container.</p>
-      <div class="example absolute-container">
-        Container
-        <div class="absolute-box">Absolute</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Fixed</h2>
-      <div class="example fixed-box">Fixed</div>
-    </section>
-
-    <section>
-      <h2>Sticky</h2>
-      <p>Scroll down to see the sticky effect in action. The box will stick to the top when it reaches the viewport.</p>
-      <div class="example sticky-box">Sticky</div>
-      <div style="height: 500px;">Scroll down...</div>
-    </section>
-  </main>
 </body>
 </html>
