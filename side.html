@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Preloader</title>
+    <style>
+       
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loading-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #loading-center-absolute {
+            position: relative;
+            text-align: center;
+        }
+
+        .loading-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loading-icon img {
+            margin: 10px;
+        }
+
+        .loading-logo {
+            width: 100px;
+        }
+
+
+        
+        body.loaded #loading {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="loading-icon">
+                    <img src="./assets/logo.png" alt="logo-img" width="100%" height="100%">
+                    <img class="loading-logo" src="./assets/preloader.svg" alt="Loading..."  height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div style="display: none;" id="content">
+        <h1>Welcome to the Page!</h1>
+        <p>Here is your main content.</p>
+    </div>
+
+    <script>
+        // Simulate content load
+        window.addEventListener('load', () => {
+            // Delay the hiding of the preloader
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+                document.getElementById('content').style.display = 'block';
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+        
+    </script>
+</body>
+</html>
